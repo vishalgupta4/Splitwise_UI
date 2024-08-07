@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Settler</title>
+    <link rel="stylesheet" href="vg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Debt Settler</h1>
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+        <div class="input-group">
+            <label for="balance">Balance:</label>
+            <input type="number" id="balance" step="0.01" placeholder="Enter balance">
+        </div>
+        <button onclick="addPerson()">Add Person</button>
+        <button onclick="settleDebts()">Settle Debts</button>
+        <div id="result-section">
+            <h2>Settlement Results:</h2>
+            <ul id="results"></ul>
+        </div>
+    </div>
+    <script src="vg.js"></script>
+</body>
+</html>
